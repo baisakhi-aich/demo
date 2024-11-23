@@ -1,0 +1,74 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(94, 81, 11);
+}
+
+.onepage {
+    text-align: center;
+}
+
+/* Center the image */
+.onepage img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animation for <h1> */
+.onepage h1 {
+    font-size: 1em;
+    color: #7d2929;
+    margin-top: 20px;
+    animation: slideIn 1.5s ease-in-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Animation for <p> */
+.onepage p {
+    font-size: 1.2em;
+    color: #080707;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-in-out 1s; /* Delay of 1 second */
+}
+
+/* Phone number styling */
+.phone-number {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.phone-number:hover {
+    color: #004499;
+    text-decoration: underline;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
